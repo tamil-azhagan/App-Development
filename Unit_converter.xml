@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="top">
+
+    <TextView
+        android:id="@+id/UnitConverter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight Converter"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_below="@+id/UnitConverter"
+        android:id="@+id/AppDef"
+        android:text="This App helps to convert Kilogram to Gram and Vice versa"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="40sp"
+        android:textSize="15sp"
+        android:textStyle="italic|bold"
+        />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@+id/AppDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:text="Enter Your Value Below"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/input"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="20sp"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        tools:ignore="SpeakableTextPresentCheck,ToughTargetSizeCheck"
+        />
+    <Button
+        android:id="@+id/btnConvertKg"
+        android:layout_below="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Convert to Kg"
+        android:layout_marginStart="60sp"
+        />
+    <Button
+        android:id="@+id/btnConvertgram"
+        android:layout_below="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Convert to gm"
+        android:layout_toRightOf="@+id/btnConvertKg"
+        android:layout_marginStart="25sp"
+        />
+    <TextView
+        android:id="@+id/ans"
+        android:layout_below="@+id/btnConvertgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>
